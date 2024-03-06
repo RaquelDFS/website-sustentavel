@@ -3,4 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+@font-face {
+  font-family: "Aktiv-grotesk";
+  src: url(../assets/fonts/Aktiv.Grotesk/AktivGrotesk-Regular.ttf);
+  font-weight: 400;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Aktiv-grotesk", sans-serif;
+}
+
+span {
+  color: #00E8C5;
 }/*# sourceMappingURL=style.css.map */
