@@ -142,4 +142,60 @@ body {
         text-transform: capitalize;
         font-size: 1rem;
     }
+
+    #motivos {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+
+        .motivos {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            h2 {
+                font-size: 3.8em;
+                line-height: 1em;
+            }
+
+            .blocos {
+                width: 100%;
+
+                .bloco {
+                    display: flex;
+                    gap: 20px;
+                    margin-bottom: 60px;
+
+                    .image {
+                        img {
+                            max-width: 231px;
+                            max-height: 167px;
+                            width: 231px;
+                            height: auto;
+                            box-sizing: border-box;
+                        }
+
+                    }
+
+                    div {
+                        h3 {
+                            font-size: 2em;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 1.5em;
+                        }
+                    }
+
+
+
+
+
+                }
+            }
+        }
+    }
 }

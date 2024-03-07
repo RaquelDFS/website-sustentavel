@@ -130,4 +130,41 @@ body button {
   border-radius: 50px;
   text-transform: capitalize;
   font-size: 1rem;
+}
+body #motivos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body #motivos .motivos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+body #motivos .motivos h2 {
+  font-size: 3.8em;
+  line-height: 1em;
+}
+body #motivos .motivos .blocos {
+  width: 100%;
+}
+body #motivos .motivos .blocos .bloco {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+body #motivos .motivos .blocos .bloco .image img {
+  max-width: 231px;
+  max-height: 167px;
+  width: 231px;
+  height: auto;
+  box-sizing: border-box;
+}
+body #motivos .motivos .blocos .bloco div h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+body #motivos .motivos .blocos .bloco div p {
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
