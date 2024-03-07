@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 fieldset {
@@ -16,9 +17,5 @@ $White: #fff;
 $Green:#00E8C5;
 $Purple: #b479ff;
 $Gray: #9D9D9D;
-
-@font-face {
-    font-family: 'Aktiv-grotesk';
-    src: url(../assets/fonts/Aktiv.Grotesk/AktivGrotesk-Regular.ttf);
-    font-weight: 400;
-}
+$Transparent: #ffffff00;
+$Gradient: conic-gradient(from 137deg at 46.94% 54.99%, #7761FF 41deg, #AC7 115deg, #00E8C5 262deg);

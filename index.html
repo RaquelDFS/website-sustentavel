@@ -3,39 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Replicação de Website - Website Sustentável</title>
   </head>
   <body>
     <nav>
-      <img src="" alt="Logo" />
-      <div class="nav-bar">
-        <ul>
-          <li><a href="#">sobre o selo</a></li>
-          <li><a href="#">como funciona</a></li>
-          <li><button>consultoria</button></li>
-          <li><button>quero um website sustentável</button></li>
-        </ul>
-      </div>
+      <img src="./assets/images/Logo-Website-Sustentavel.svg" alt="Logo" />
+      <ul>
+        <li><a href="#">Sobre o Selo</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><button>consultoria</button></li>
+        <li><button>quero um website sustentável</button></li>
+      </ul>
     </nav>
     <main>
-      <h1>Junte-se ao movimento por uma Internet Mais Verde</h1>
-      <p>
-        Coloque a URL do seu site no campo abaixo e verifique se ele é um
-        website sustentável:
-      </p>
-      <form action="">
-        <fieldset>
-          <input type="url" />
-          <button type="submit">Verificar</button>
-        </fieldset>
-      </form>
-      <span>Versão 1.1, atualizado em 30/01/2024</span>
-      <p>
-        Esta iniciativa pioneira busca reconhecer e incentivar práticas de
-        <span>web ecologicamente corretas,</span> servindo como uma orientação
-        para mudanças positivas na indústria digital.
-      </p>
+      <div id="main">
+        <h1>Junte-se ao <span>movimento por uma Internet Mais Verde</span></h1>
+        <p>
+          Coloque a URL do seu site no campo abaixo e verifique se ele é um
+          website sustentável:
+        </p>
+        <form action="">
+          <fieldset>
+            <input type="url" placeholder="URL do site" />
+            <button type="submit">Verificar</button>
+          </fieldset>
+        </form>
+        <span class="version">Versão 1.1, atualizado em 30/01/2024</span>
+        <p class="subtitle">
+          Esta iniciativa pioneira busca reconhecer e incentivar práticas de
+          <span>web ecologicamente corretas,</span> servindo como uma orientação
+          para mudanças positivas na indústria digital.
+        </p>
+      </div>
+      <div class="gradient-background"></div>
     </main>
     <section>
       <h2>Por que uma <span> Sustentável é Crucial? </span></h2>

@@ -1,9 +1,145 @@
 body {
     background-color: $Black;
     color: $White;
-    font-family: 'Aktiv-grotesk', sans-serif;
-}
+    font-size: 16px;
 
-span {
-    color: $Green;
+
+    nav {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 80px;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            font-weight: 800;
+            align-items: center;
+
+            a {
+                color: $White;
+                text-decoration: none;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    color: $Green;
+                }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .gradient-background {
+            position: absolute;
+            top: 31.2vh;
+            right: -6.41vw;
+            width: 91vw;
+            height: 45vw;
+            background-image: $Gradient;
+            filter: blur(200px);
+            z-index: -1;
+            border-radius: 1000px;
+            opacity: .5;
+        }
+
+        #main {
+            width: 1080px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        h1 {
+            font-size: 5em;
+            font-weight: 800;
+            text-align: center;
+
+            span {
+                color: $Green;
+            }
+        }
+
+        p {
+            margin-top: 40px;
+            font-size: clamp(1.5rem, 3.7vw, 2.061rem);
+            font-weight: 300;
+        }
+
+        form {
+            width: 100%;
+
+            fieldset {
+                background-color: $White;
+                border-radius: 200px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                input {
+                    border: none;
+                    background-color: $Transparent;
+                    color: $Gray;
+                    font-size: 20px;
+                    padding: 20px 30px;
+                    width: 100%;
+                }
+
+                button {
+                    background-color: $Purple;
+                    color: $White;
+                    border: none;
+                    font-size: 26px;
+                    padding: 0px 50px;
+                    transition: .3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: translateY(-3px);
+                    }
+
+                }
+            }
+        }
+
+        .version {
+            color: $Gray;
+            font-size: small;
+            margin-top: 10px;
+        }
+
+        .subtitle {
+            font-weight: 400;
+            font-size: x-large;
+
+        }
+    }
+
+    span {
+        color: $Green;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: $Transparent;
+        color: $Green;
+        font-weight: 700;
+        border: 4px $Green solid;
+        border-radius: 50px;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
 }
