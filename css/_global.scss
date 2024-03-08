@@ -1,0 +1,20 @@
+span {
+    color: $Green;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: $Transparent;
+    color: $Green;
+    font-weight: 700;
+    border: 4px $Green solid;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
