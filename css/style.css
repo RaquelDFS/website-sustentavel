@@ -10,6 +10,11 @@ fieldset {
   border: none;
 }
 
+body {
+  background-color: #000;
+  color: #fff;
+}
+
 span,
 a,
 i {
@@ -32,42 +37,24 @@ button:hover {
   transform: translateY(-3px);
 }
 
-body {
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
+section {
+  width: 100vw;
+  padding: 20px 200px;
 }
-body nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 80px;
+
+h1 {
+  font-size: clamp(1.94rem, 5vw, 5.455rem);
+  line-height: clamp(2.39rem, 5.4vw, 5.758rem);
+  letter-spacing: -0.140625vw;
 }
-body nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  font-weight: 800;
-  align-items: center;
+
+h2 {
+  font-size: clamp(1.94rem, 3.7vw, 3.758rem);
+  line-height: clamp(2.39rem, 4.1vw, 4.121rem);
+  letter-spacing: -0.096875vw;
 }
-body nav ul a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-body nav ul a:hover {
-  color: #00E8C5;
-}
-body main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-body main .gradient-background {
+
+.gradient-background {
   position: absolute;
   top: 31.2vh;
   right: -6.41vw;
@@ -79,131 +66,85 @@ body main .gradient-background {
   border-radius: 1000px;
   opacity: 0.5;
 }
-body main #main {
-  width: 1080px;
-  height: 100%;
+
+.color-white {
+  color: white !important;
+}
+
+.navbar {
+  width: 100%;
+  padding: 36px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+}
+.navbar ul.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar ul.menu a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main #main {
+  margin: 15%;
+  max-width: 1440px;
+  text-align: center;
   justify-content: center;
 }
-body main h1 {
-  font-size: 5em;
-  font-weight: 800;
-  text-align: center;
+main #main .main-title {
+  font-size: 6em;
+  margin: 20px;
+  line-height: 1.2em;
 }
-body main h1 span {
-  color: #00E8C5;
-}
-body main p {
-  margin-top: 40px;
-  font-size: clamp(1.5rem, 3.7vw, 2.061rem);
+main #main .main-subtitle {
+  font-size: 2em;
+  margin: 40px;
   font-weight: 300;
 }
-body main form {
-  width: 100%;
-}
-body main form fieldset {
-  background-color: #fff;
-  border-radius: 200px;
-  width: 100%;
+main #main .main-form {
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-body main form fieldset input {
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  color: #9D9D9D;
-  font-size: 20px;
-  padding: 20px 30px;
-  width: 100%;
-}
-body main form fieldset button {
-  background-color: #b479ff;
-  color: #fff;
-  border: none;
-  font-size: 26px;
-  padding: 0px 50px;
-}
-body main .version {
-  color: #9D9D9D;
-  font-size: small;
-  margin-top: 10px;
-}
-body main .subtitle {
-  font-weight: 400;
-  font-size: x-large;
-}
-
-#motivos {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-#motivos .motivos {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-#motivos .motivos h2 {
-  font-size: 3.8em;
-  line-height: 1em;
-}
-#motivos .motivos .blocos {
-  width: 100%;
-}
-#motivos .motivos .blocos .bloco {
-  margin-bottom: 140px;
-  display: flex;
-  gap: 20px;
-  margin-bottom: 95px;
-}
-#motivos .motivos .blocos .bloco .image img {
-  max-width: 231px;
-  max-height: 167px;
-  width: 231px;
-  height: auto;
-  box-sizing: border-box;
-}
-#motivos .motivos .blocos .bloco div h3 {
-  font-size: 2em;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-#motivos .motivos .blocos .bloco div p {
-  font-size: 1.5em;
-}
-
-#reconhecimento {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 80px 250px;
+  margin: 15px;
 }
-#reconhecimento h2 {
-  text-align: center;
-  font-size: 3.8em;
-  font-weight: 400;
-}
-#reconhecimento > div {
+main #main .main-form .fieldset {
+  width: 72%;
+  background-color: #fff;
   display: flex;
-  gap: 100px;
-  width: 1080px;
-  margin-top: 80px;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 50px;
+  min-height: 60px;
 }
-#reconhecimento > div div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+main #main .main-form .fieldset .input {
+  margin: 0px 28px;
+  border: none;
+  color: #9D9D9D;
+  font-size: 24px;
 }
-#reconhecimento > div div p {
-  font-size: 1.5em;
+main #main .main-form .fieldset .form-btn {
+  background-color: #b479ff;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 20px 50px;
 }
-#reconhecimento > div div div {
-  gap: 10px;
-  flex-direction: row;
-  margin: 20px 0;
+main #main .span-small-text {
+  color: #9D9D9D;
+  font-size: 12px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

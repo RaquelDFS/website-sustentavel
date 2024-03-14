@@ -5,7 +5,9 @@
     box-sizing: border-box;
     outline: 0;
     font-family: "Roboto", sans-serif;
+
 }
+
 
 fieldset {
     border: none;
@@ -19,3 +21,9 @@ $Purple: #b479ff;
 $Gray: #9D9D9D;
 $Transparent: #ffffff00;
 $Gradient: conic-gradient(from 137deg at 46.94% 54.99%, #7761FF 41deg, #AC7 115deg, #00E8C5 262deg);
+
+body {
+    background-color: $Black;
+    color: $White;
+
+}

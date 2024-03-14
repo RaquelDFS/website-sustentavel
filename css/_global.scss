@@ -20,3 +20,40 @@ button {
         transform: translateY(-3px);
     }
 }
+
+
+
+section {
+    width: 100vw;
+    padding: 20px 200px;
+}
+
+h1 {
+    font-size: clamp(1.94rem, 5vw, 5.455rem);
+    line-height: clamp(2.39rem, 5.4vw, 5.758rem);
+    letter-spacing: -.140625vw;
+}
+
+h2 {
+    font-size: clamp(1.94rem, 3.7vw, 3.758rem);
+    line-height: clamp(2.39rem, 4.1vw, 4.121rem);
+    letter-spacing: -.096875vw;
+}
+
+
+.gradient-background {
+    position: absolute;
+    top: 31.2vh;
+    right: -6.41vw;
+    width: 91vw;
+    height: 45vw;
+    background-image: $Gradient;
+    filter: blur(200px);
+    z-index: -1;
+    border-radius: 1000px;
+    opacity: .5;
+}
+
+.color-white {
+    color: white !important;
+}

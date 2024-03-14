@@ -9,50 +9,64 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Replicação de Website - Website Sustentável</title>
   </head>
   <body>
-    <nav>
-      <img src="./assets/images/Logo-Website-Sustentavel.svg" alt="Logo" />
-      <ul>
-        <li><a href="#">Sobre o Selo</a></li>
-        <li><a href="#">Como funciona</a></li>
-        <li><button>consultoria</button></li>
-        <li><button>quero um website sustentável</button></li>
+    <nav class="navbar">
+      <img
+        class="logo"
+        src="./assets/images/Logo-Website-Sustentavel.svg"
+        alt="Logo"
+      />
+      <ul class="menu">
+        <li class="menu-itens color-white">
+          <a href="#" class="color-white">Sobre o Selo</a>
+        </li>
+        <li class="menu-itens"><a href="#">Como funciona</a></li>
+        <li class="menu-itens"><button>consultoria</button></li>
+        <li class="menu-itens">
+          <button>quero um website sustentável</button>
+        </li>
       </ul>
     </nav>
     <main>
       <div id="main">
-        <h1>Junte-se ao <span>movimento por uma Internet Mais Verde</span></h1>
-        <p>
+        <h1 class="main-title">
+          Junte-se ao <span>movimento por uma Internet Mais Verde</span>
+        </h1>
+        <p class="main-subtitle">
           Coloque a URL do seu site no campo abaixo e verifique se ele é um
           website sustentável:
         </p>
-        <form action="">
-          <fieldset>
-            <input type="url" placeholder="URL do site" />
-            <button type="submit">Verificar</button>
+        <form action="" class="main-form">
+          <fieldset class="fieldset">
+            <input type="url" placeholder="URL do site" class="input" />
+            <button type="submit" class="form-btn">Verificar</button>
           </fieldset>
         </form>
-        <span class="version">Versão 1.1, atualizado em 30/01/2024</span>
-        <p class="subtitle">
+        <span class="span-small-text"
+          >Versão 1.1, atualizado em 30/01/2024</span
+        >
+        <p class="main-text">
           Esta iniciativa pioneira busca reconhecer e incentivar práticas de
           <span>web ecologicamente corretas,</span> servindo como uma orientação
           para mudanças positivas na indústria digital.
         </p>
       </div>
-      <div class="gradient-background"></div>
-    </main>
-    <section id="motivos">
-      <div class="motivos">
-        <h2>Por que uma <span>Internet Sustentável é Crucial? </span></h2>
-        <div class="blocos">
-          <div class="bloco">
+      <article id="first-section">
+        <div class="first-section-title">
+          <h2>Por que uma <span>Internet Sustentável é Crucial? </span></h2>
+        </div>
+        <div class="first-section-blocks">
+          <article class="first-section-block">
             <div class="image">
               <img
                 src="https://raw.githubusercontent.com/RaquelDFS/website-sustentavel/main/assets/images/Consumo-elevado-de-energia-no-mundo.webp"
@@ -68,8 +82,8 @@
                 energéticos.
               </p>
             </div>
-          </div>
-          <div class="bloco">
+          </article>
+          <article class="first-section-block">
             <div class="image">
               <img
                 src="https://raw.githubusercontent.com/RaquelDFS/website-sustentavel/main/assets/images/Emissoes-de-carbono-comparaveis-a-aviacao.webp"
@@ -84,8 +98,8 @@
                 otimização de websites para menor impacto ambiental.
               </p>
             </div>
-          </div>
-          <div class="bloco">
+          </article>
+          <article class="first-section-block">
             <div class="image">
               <img
                 src="https://raw.githubusercontent.com/RaquelDFS/website-sustentavel/main/assets/images/Crescimento-rapido-no-consumo-de-dados.webp"
@@ -100,8 +114,8 @@
                 otimização de websites para menor impacto ambiental.
               </p>
             </div>
-          </div>
-          <div class="bloco">
+          </article>
+          <article class="first-section-block">
             <div class="image">
               <img
                 src="https://raw.githubusercontent.com/RaquelDFS/website-sustentavel/main/assets/images/Responsabilidade-social.webp"
@@ -116,38 +130,41 @@
                 podem diminuir o consumo de energia de um site em até 72%.
               </p>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
-    </section>
-    <section id="reconhecimento">
-      <h2>
-        O Selo Website Sustentável é <span> um reconhecimento para sites </span>
-        que demonstram práticas exemplares de sustentabilidade.
-      </h2>
+      </article>
+    </main>
+    <article id="o-selo">
       <div>
-        <img
-          src="./assets/images/selo_website_sustentavel.webp"
-          alt="Selo Web Sustentável"
-        />
-        <div>
-          <p>
-            Ele sinaliza para os visitantes e clientes o compromisso do site com
-            a redução <span> da pegada de carbono digital</span>. Este selo é um
-            símbolo de excelência e liderança no movimento por uma internet mais
-            verde.
-          </p>
+        <h2>
+          O Selo Website Sustentável é
+          <span> um reconhecimento para sites </span>
+          que demonstram práticas exemplares de sustentabilidade.
+        </h2>
+        <section>
+          <img
+            src="./assets/images/selo_website_sustentavel.webp"
+            alt="Selo Web Sustentável"
+          />
           <div>
-            <a href="#">Veja mais</a>
-            <i class="fal fa-chevron-down"></i>
+            <p>
+              Ele sinaliza para os visitantes e clientes o compromisso do site
+              com a redução <span> da pegada de carbono digital</span>. Este
+              selo é um símbolo de excelência e liderança no movimento por uma
+              internet mais verde.
+            </p>
+            <div>
+              <a href="#">Veja mais</a>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
-    <section>
+    </article>
+    <article id="tornar-sustentavel">
       <h2>Como seu site pode se <span> tornar sustentável? </span></h2>
       <div>
-        <ol>
+        <ul>
           <li>
             <p>
               <span>Adote práticas sustentáveis</span> de design e
@@ -169,10 +186,10 @@
               colocar em seu site.
             </p>
           </li>
-        </ol>
+        </ul>
       </div>
-    </section>
-    <section>
+    </article>
+    <article id="examples">
       <h2>Sites belíssimos, profissionais e <span> Sustentáveis </span></h2>
       <div>
         <div>
@@ -206,8 +223,8 @@
           <p>Apenas <span>0,32g</span> de CO²</p>
         </div>
       </div>
-    </section>
-    <section>
+    </article>
+    <section class="site-test">
       <img src="" alt="Eco Computer" />
       <p>
         Em média, uma página web produz cerca de <span>0,8 gramas</span> de CO²
@@ -217,7 +234,7 @@
       </p>
       <button>Teste seu site <i>Icone</i></button>
     </section>
-    <section>
+    <article id="o-impacto">
       <h2>O impacto em <span>números</span></h2>
       <div>
         <div>
@@ -291,8 +308,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section>
+    </article>
+    <article id="contact">
       <div>
         <div>
           <div>
@@ -300,11 +317,11 @@
             <p>Adote práticas de design sustentável</p>
             <p>Contribua para uma internet mais verde</p>
           </div>
-          <p>Torne seu website um agente de mudança ambiental</p>
+          <h3>Torne seu website um agente de mudança ambiental</h3>
         </div>
         <button>Agende uma conversa <i>Icone</i></button>
       </div>
-    </section>
+    </article>
     <footer>
       <div>
         <img src="" alt="Logo" />

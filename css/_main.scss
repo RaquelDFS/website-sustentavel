@@ -1,127 +1,69 @@
-body {
-    background-color: $Black;
-    color: $White;
-    font-size: 16px;
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
-    nav {
-
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 80px;
-
-        ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-            font-weight: 800;
-            align-items: center;
-
-            a {
-                color: $White;
-                text-decoration: none;
-                transition: .3s ease-in-out;
-
-                &:hover {
-                    color: $Green;
-                }
-            }
-        }
-    }
-
-    main {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #main {
+        margin: 15%;
+        max-width: 1440px;
         text-align: center;
+        justify-content: center;
 
-        .gradient-background {
-            position: absolute;
-            top: 31.2vh;
-            right: -6.41vw;
-            width: 91vw;
-            height: 45vw;
-            background-image: $Gradient;
-            filter: blur(200px);
-            z-index: -1;
-            border-radius: 1000px;
-            opacity: .5;
+        .main-title {
+            font-size: 6em;
+            margin: 20px;
+            line-height: 1.2em;
         }
 
-        #main {
-            width: 1080px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        h1 {
-            font-size: 5em;
-            font-weight: 800;
-            text-align: center;
-
-            span {
-                color: $Green;
-            }
-        }
-
-        p {
-            margin-top: 40px;
-            font-size: clamp(1.5rem, 3.7vw, 2.061rem);
+        .main-subtitle {
+            font-size: 2em;
+            margin: 40px;
             font-weight: 300;
         }
 
-        form {
-            width: 100%;
+        .main-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
 
-            fieldset {
+            .fieldset {
+                width: 72%;
                 background-color: $White;
-                border-radius: 200px;
-                width: 100%;
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
-                margin-top: 40px;
+                border: none;
+                border-radius: 50px;
+                min-height: 60px;
 
-                input {
+                .input {
+                    margin: 0px 28px;
                     border: none;
-                    background-color: $Transparent;
                     color: $Gray;
-                    font-size: 20px;
-                    padding: 20px 30px;
-                    width: 100%;
+                    font-size: 24px;
                 }
 
-                button {
+                .form-btn {
                     background-color: $Purple;
-                    color: $White;
                     border: none;
-                    font-size: 26px;
-                    padding: 0px 50px;
+                    color: $White;
+                    font-size: 22px;
+                    padding: 20px 50px;
                 }
+
             }
+
         }
 
-        .version {
+        .span-small-text {
             color: $Gray;
-            font-size: small;
-            margin-top: 10px;
+            font-size: 12px;
+            margin-bottom: 50px;
         }
 
-        .subtitle {
-            font-weight: 400;
-            font-size: x-large;
-
-        }
+        .main-text {}
     }
-
-  
-
-   
 }
