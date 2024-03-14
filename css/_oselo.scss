@@ -1,0 +1,60 @@
+article#o-selo {
+    margin: 10%;
+
+    h2 {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    section {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 80px;
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    }
+
+    #tornar-sustentavel {
+        margin: 150px 0;
+
+        h2 {
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin: 150px 0;
+
+            h4 {
+                font-weight: 400;
+                color: $Green;
+                padding-right: 10%;
+                padding-bottom: 10px;
+                margin-right: 5%;
+                border-bottom: 1px solid $Green;
+            }
+
+            .list-item {
+                display: flex;
+                align-items: baseline;
+                font-size: 2.5em;
+
+                i {
+                    transform: rotate(90deg);
+                }
+
+            }
+
+        }
+    }
+}

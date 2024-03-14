@@ -25,5 +25,6 @@ $Gradient: conic-gradient(from 137deg at 46.94% 54.99%, #7761FF 41deg, #AC7 115d
 body {
     background-color: $Black;
     color: $White;
+    overflow-x: hidden;
 
 }

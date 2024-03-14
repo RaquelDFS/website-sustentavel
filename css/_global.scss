@@ -19,6 +19,18 @@ button {
     &:hover {
         transform: translateY(-3px);
     }
+
+    &.btn-purple {
+        background-color: $Purple;
+        border: none;
+        color: $White;
+        font-size: 22px;
+        padding: 20px 50px;
+
+        i {
+            color: $White;
+        }
+    }
 }
 
 

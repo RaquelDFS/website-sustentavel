@@ -13,6 +13,7 @@ fieldset {
 body {
   background-color: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 
 span,
@@ -35,6 +36,16 @@ button {
 }
 button:hover {
   transform: translateY(-3px);
+}
+button.btn-purple {
+  background-color: #b479ff;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 20px 50px;
+}
+button.btn-purple i {
+  color: #fff;
 }
 
 section {
@@ -99,7 +110,7 @@ main {
   align-items: center;
 }
 main #main {
-  margin: 15%;
+  margin: 10%;
   max-width: 1440px;
   text-align: center;
   justify-content: center;
@@ -136,15 +147,87 @@ main #main .main-form .fieldset .input {
   color: #9D9D9D;
   font-size: 24px;
 }
-main #main .main-form .fieldset .form-btn {
-  background-color: #b479ff;
-  border: none;
-  color: #fff;
-  font-size: 22px;
-  padding: 20px 50px;
-}
 main #main .span-small-text {
   color: #9D9D9D;
   font-size: 12px;
   margin-bottom: 50px;
+}
+main #main .main-text {
+  font-size: 24px;
+  margin: 50px;
+}
+main article#first-section {
+  width: 1440px;
+  display: flex;
+}
+main article#first-section .first-section-title {
+  width: 62%;
+}
+main article#first-section .first-section-blocks {
+  margin: 0 20px;
+}
+main article#first-section .first-section-blocks .first-section-block {
+  display: flex;
+}
+main article#first-section .first-section-blocks .first-section-block .image {
+  padding: 0 80px;
+}
+main article#first-section .first-section-blocks .first-section-block .content h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main article#first-section .first-section-blocks .first-section-block .content p {
+  font-size: 1.2em;
+  margin-bottom: 60px;
+}
+
+article#o-selo {
+  margin: 10%;
+}
+article#o-selo h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+article#o-selo section {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 80px;
+}
+article#o-selo section p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+article#o-selo #tornar-sustentavel {
+  margin: 150px 0;
+}
+article#o-selo #tornar-sustentavel h2 {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+article#o-selo #tornar-sustentavel .list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 150px 0;
+}
+article#o-selo #tornar-sustentavel .list h4 {
+  font-weight: 400;
+  color: #00E8C5;
+  padding-right: 10%;
+  padding-bottom: 10px;
+  margin-right: 5%;
+  border-bottom: 1px solid #00E8C5;
+}
+article#o-selo #tornar-sustentavel .list .list-item {
+  display: flex;
+  align-items: baseline;
+  font-size: 2.5em;
+}
+article#o-selo #tornar-sustentavel .list .list-item i {
+  transform: rotate(90deg);
 }/*# sourceMappingURL=style.css.map */
